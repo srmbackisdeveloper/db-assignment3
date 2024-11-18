@@ -19,7 +19,7 @@ func LoadConfig() (*Config, error) {
 	}
 
 	return &Config{
-		DatabaseURL: getEnv("DATABASE_URL", "postgres://user:password@localhost:5432/dbname?sslmode=disable"),
+		DatabaseURL: getEnv("DATABASE_URL", "postgresql://postgres:XoygASBVDxiPvbgYSfVyKCSfJejIWCJn@autorack.proxy.rlwy.net:11058/railway"),
 		LogLevel: getEnv("LOG_LEVEL", "info"),
 		Port: getEnv("PORT", "8080"),
 	}, nil
